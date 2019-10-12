@@ -23,6 +23,11 @@ public class EventoController {
 		return "index";
 	}
 	
+	@GetMapping("/membros")
+	public String membros() {
+		return "membros";
+	}
+	
 	@GetMapping("/listaEventos")
 	public ModelAndView findAll() {
 		ModelAndView mv = new ModelAndView("listEvento");
