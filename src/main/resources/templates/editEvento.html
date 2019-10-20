@@ -45,6 +45,14 @@ body {
 					class="form-control input-sm" type="text" name="telefone" th:field="*{palestrante}" />
 			</div>
 			<div class="form-group">
+				<label for="horario">Hora</label> 
+				<input class="form-control input-sm" type="time" th:field="*{horario}" />
+			</div>
+			<div class="form-group">
+				<label for="data">Data</label> 
+				<input class="form-control input-sm" type="date" th:field="*{data}" />
+			</div>
+			<div class="form-group">
 				<input class="btn btn-primary" type="submit" value="salvar">
 			</div>
 		</form>

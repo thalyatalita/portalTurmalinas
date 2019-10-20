@@ -36,7 +36,8 @@ body {
 							<th>Nome</th>
 							<th>Local</th>
 							<th>Palestrante</th>
-							<th></th>
+							<th>Hora</th>
+							<th>Data</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -45,6 +46,8 @@ body {
 							<td th:text="${evento.nome}"></td>
 							<td th:text="${evento.local}"></td>
 							<td th:text="${evento.palestrante}"></td>
+							<td th:text="${evento.horario}"></td>
+							<td th:text="${evento.data}"></td>
 							<td>
 								<div class="btn-group pull-right">
 									<a class="btn btn-sm btn-primary" th:href="@{/edit/{id}(id=${evento.id})}">Editar</a>

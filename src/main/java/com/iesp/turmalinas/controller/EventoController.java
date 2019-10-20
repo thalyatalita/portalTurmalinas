@@ -18,16 +18,6 @@ public class EventoController {
 	@Autowired
 	private EventoService service;
 	
-	@GetMapping("/")
-	public String index() {
-		return "index";
-	}
-	
-	@GetMapping("/membros")
-	public String membros() {
-		return "membros";
-	}
-	
 	@GetMapping("/listaEventos")
 	public ModelAndView findAll() {
 		ModelAndView mv = new ModelAndView("listEvento");

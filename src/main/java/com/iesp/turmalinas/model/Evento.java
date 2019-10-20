@@ -12,17 +12,17 @@ import javax.persistence.Table;
 @Table(name = "tb_eventos")
 public class Evento implements Serializable {
 
-	/**
-	 * 
-	 */
 	private static final long serialVersionUID = 1L;
 	
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	private Long id;
+	
 	private String nome;
 	private String local;
 	private String palestrante;
+	private String horario;
+	private String data;
 	
 	public Long getId() {
 		return id;
@@ -48,4 +48,17 @@ public class Evento implements Serializable {
 	public void setPalestrante(String palestrante) {
 		this.palestrante = palestrante;
 	}
+	public String getHorario() {
+		return horario;
+	}
+	public void setHorario(String horario) {
+		this.horario = horario;
+	}
+	public String getData() {
+		return data;
+	}
+	public void setData(String data) {
+		this.data = data;
+	}
+	
 }
