@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://thymeleaf.org/"
+	xmlns:layout="http://ultraq.net.nz/thymeleaf/layout/"
+	layout:decorator="layout">
+<head>
+<meta charset='UTF-8'>
+<link rel="shortcut icon" href="img/turmalinasPreto.png" type="image/x-icon">
+<title>Acesso ao sistema</title>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" data-integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" data-crossorigin="anonymous">
+<link rel='stylesheet' type='text/css' href='css/login.css'>
+</head>
+<body>
+	<section class="form-log">
+		<div>
+			<form method="post" th:action="@{/logout}">
+				<button type="submit" class="btn">
+					<span class="glyphicon glyphicon-log-out"></span> Sair
+				</button>
+			</form>
+		</div>
+	</section>
+
+	<section class="container">
+		<div class="form-box">
+			<form th:action="@{/login}" method="post">
+				<div>
+					<h1>Login</h1>
+				</div>
+				<div>
+					<input type="text" name="username" placeholder="Informe seu login" class="form-input"> 
+					<input type="password" name="password" placeholder="Informe sua senha" class="form-input">
+				</div>
+				<div>
+					<input type="submit" value="Entrar" class="form-btn">
+				</div>
+				<div>
+					<input type="checkbox" id="remember-me" name="remember-me" /> 
+					<label for="remember-me">Lembrar?</label>
+				</div>
+			</form>
+		</div>
+	</section>
+
+</body>
+</html>
