@@ -1,5 +1,7 @@
 <!DOCTYPE html>
-<html>
+<html  xmlns:th="http://www.thymeleaf.org"
+       xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
+
 <head>
     <meta charset='UTF-8'>
      <link rel="shortcut icon" href="/img/turmalinasPreto.png" type="image/x-icon">
@@ -21,22 +23,23 @@
          <ul>
             <li><a href="#turmalinas">Sobre nós</a></li>
             <li><a href="/membros">Membros</a></li>
-            <li><a href="#">Eventos</a></li>
+            <li><a href="/listaEventos">Eventos</a></li>
             <li><a href="#">Publicações</a></li>
             <li><a href="/produtos">Produtos</a></li>
-            <li><a href="#contat">Contato</a></li>
+            <li><a href="#contat">Contato</a></li>      
+            <li sec:authorize="hasAuthority('ROLE_ADMIN')"><a href=/gerenci>Gerenciamento</a>
+            </li>
          </ul>       
         </nav>
     </header>
-  
     <section id="home" class="header-1">
         <h1>Computação é para Meninas</h1>
         <h3>Return Empoderamento ++;</h3>
         <a class="btn" href="">Saiba mais</a>
     </section>
-
+    
     <section id="turmalinas" class="conheca-turmalinas">
-      <div class="item">
+    <div class="item">
         <h1>PRICIPAIS OBJETIVOS</h1>
         <p>Tem como intuito principal investigar sobre a atuação da mulher e seus desafios na área da tecnologia, além de apoiar e emponderar as discentes do sexo feminino da instituição a fim de minimizar os índices de evasão nos cursos de tecnologia.</p>
       </div>

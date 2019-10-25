@@ -25,5 +25,10 @@ public class IndexController {
 	public String produtos() {
 		return "produtos";
 	}
+	
+	@GetMapping("/gerenci")
+	public String gerenciamento() {
+		return "gerenciamento";
+	}
 
 }
