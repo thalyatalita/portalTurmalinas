@@ -20,6 +20,7 @@ public class Publicacao implements Serializable {
 	private String nomePublicacao;
 	private String descricao;
 	private String autor;
+	
 	public Long getId() {
 		return id;
 	}
