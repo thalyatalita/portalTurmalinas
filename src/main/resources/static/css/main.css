@@ -41,6 +41,32 @@ header {
     box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
 }
 
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #fff;
+  min-width: 160px;
+  margin-top: 5px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+	background-color: #f1f1f1;
+	}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
 /* tamanho da imagem*/
 .img-logo { width: 180px;}
 .nav ul {display: flex; }
@@ -91,8 +117,9 @@ header li:last-child {margin-right: 0;}
 	display: flex;
   	max-width: 1080px;
   	margin: 0 auto;
-  	padding: 100px 50px;
+  	padding: 60px 50px;
 }
+
 
 .conheca-turmalinas .col-1 {
 	
@@ -110,25 +137,30 @@ header li:last-child {margin-right: 0;}
 	
     /* altura da div */
     height: 400px;
-    align-items: center;
+    /* align-items: center; */
 }
 
 .conheca-turmalinas .col-1 img {
-	width: 45%;
-	margin-left: 150px; 
+	width: 43%;
+	margin-left: 150px;
+	margin-top: 40px;
 
 }
 
-.conheca-turmalinas .col-2 .titulo {
+.conheca-turmalinas .col-2 .titulo h1 {
+	font-family: 'Montserrat';
 	margin-right: 80px;
-	color: black;
+	 font-size: 20px;
     text-align: justify;
     margin-bottom: 15px;
+    color: black;
 }
 
-.conheca-turmalinas .col-2 .text {
+.conheca-turmalinas .col-2 .text p {
+	font-family: 'Montserrat';
 	margin-right: 80px;
-	color: black;
+	 font-size: 16px;
+	color: #666666;
     text-align: justify;
     margin-bottom: 15px;
     
@@ -144,7 +176,7 @@ header li:last-child {margin-right: 0;}
   display: flex;
   max-width: 950px;
   margin: 0 auto;
-  padding: 100px 50px;
+  padding: 30px 50px;
 }
 
 .flex > div {
@@ -188,6 +220,14 @@ header li:last-child {margin-right: 0;}
     .flex {flex-direction: column;}
 }
 
+.atvd h3 {
+    margin-top: 47px;
+    text-align: center;
+    font-family: 'Montserrat';
+	font-size: 25px;
+	color: black;
+}
+
 /*CONTATOS*/
 .contatos {
     background-color: #0984e3;
@@ -219,7 +259,7 @@ header li:last-child {margin-right: 0;}
 
 .contatos .grid {margin-bottom: 25px; display: flex;}
 .contatos .grid li {padding: 0px 30px; text-align: center;}
-.contatos .grid li a i {text-align: center; color: #fff; font-size: 4rem; margin-bottom: 30px;}
+.contatos .grid li a i {text-align: center; color: #fff; font-size: 3.2rem; margin-bottom: 30px;}
 .contatos .grid li h4 {font-size: 1.5rem; color: #fff; margin-bottom: 30px;}
 .contatos .grid li p {color: #fff; text-align: center;}
 @media(max-width:850px) {

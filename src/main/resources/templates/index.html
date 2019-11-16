@@ -21,12 +21,14 @@
         <a href="/"><img class="img-logo" src="/img/logo/turmalinasTechAzul1.png" alt="Logo Tipo"></a>
          <nav class="nav"  data-container="menu">
          <ul>
-            <li><a href="#turmalinas">Sobre nós</a></li>
+            <li class="dropdown"><a href="#sobrenos" class="dropbtn">Sobre nós</a>
+            	<div class="dropdown-content"><a href="#atividades">Nossas Atividades</a></div>
+            </li>
             <li><a href="/membros">Membros</a></li>
             <li><a href="/listaEventos">Eventos</a></li>
             <li><a href="#">Publicações</a></li>
             <li><a href="/produtos">Produtos</a></li>
-            <li><a href="#contat">Contato</a></li>      
+            <li><a href="#contato">Contato</a></li>      
             <li sec:authorize="hasAuthority('ROLE_ADMIN')"><a href=/gerenci>Gerenciamento</a>
             </li>
          </ul>       
@@ -35,7 +37,11 @@
     <section id="home" class="header-1">
     </section>
     
-   <section id="turmalinas" class="conheca-turmalinas">
+    <section id="sobrenos" class="atvd">
+    	<h3>Sobre nós</h3>
+    </section>
+    
+   <section class="conheca-turmalinas">
    	<div class="col-1">
      	<img src="./img/logo/turmalinasLogoCinza.png">
     </div>
@@ -47,35 +53,45 @@
         <p>Tem como intuito principal investigar sobre a atuação da mulher e seus desafios na área da tecnologia, além de apoiar e emponderar as discentes do sexo feminino da instituição a fim de minimizar os índices de evasão nos cursos de tecnologia.</p>
        </div>
        <div class="titulo">
+      	<h1>Porque Turmalinas?</h1>
+      </div>
+       <div class="text">
+       	  <p>O nome foi escolhido para representar quão preciosas nós somos dentro da nossa sociedade e como precisamos nos valorizar de tal forma (Turmalina é uma pedra preciosa existente em nossa região).</p>
+       </div>
+       <div class="titulo">
            <h1>Significado da Logo</h1>
        </div>
        <div class="text">
-          <p>O nome foi escolhido para representar quão preciosas nós somos dentro da nossa sociedade e como precisamos nos valorizar de tal forma (turmalina é uma pedra preciosa existente em nossa região). Além disso, nossa logo trás uma inspiração do o ícone USB com o termo “resiliência”. A resiliência é destacada por ser uma das bases do projeto e ser a bandeira do feminismo, da luta da mulher por seu espaço, pela igualdade e direitos garantidos. O cacto também soma o aspecto de representatividade regional, já que estamos no Estado da Paraíba e esse tipo de planta é típica de nossa região.</p>
+          <p>A nossa logo trás uma inspiração do o ícone USB com o termo “resiliência”. A resiliência é destacada por ser uma das bases do projeto e ser a bandeira do feminismo, da luta da mulher por seu espaço, pela igualdade e direitos garantidos. O cacto também soma o aspecto de representatividade regional, já que estamos no Estado da Paraíba e esse tipo de planta é típica de nossa região.</p>
        </div>
       </div>
    </section>
     
-    <section id="contat" class="contatos">
+    <section id="contato" class="contatos">
         <h3>Contatos</h3>
-        <p>Caso tenha alguma dúvida, não hesite em nos contactar. :)</p>
+        <p>Para mais informações. Não hesite em nos contactar.</p>
         <hr>
             <ul class="grid">
                 <li>
                     <a href="https://goo.gl/maps/nqqLve3HYpE3fecy5"><i class="fas fa-map-marker-alt"></i></a>
                     <h4>Localização</h4>
-                    <p>IESP Faculdades - João Pessoa</p>
-                </li>
-                <li>
-                    <a href="mailto:turmalinastech@gmail.com"><i class="fas fa-envelope"></i></a>
-                    <h4>E-mail</h4>
-                    <p>turmalinastech@gmail.com</p>
+                    <p>IESP Faculdades - PB</p>
                 </li>
                 <li>
                     <a href="https://www.instagram.com/turmalinastech/"><i class="fab fa-instagram"></i></a>
                     <h4>Instagram</h4>
                     <p>@turmalinastech</p>
                 </li>
+                <li>
+                    <a href="mailto:turmalinastech@gmail.com"><i class="fas fa-envelope"></i></a>
+                    <h4>E-mail</h4>
+                    <p>turmalinastech@gmail.com</p>
+                </li>
             </ul>
+    </section>
+    
+    <section id="atividades" class="atvd">
+    	<h3>Nossas Atividades</h3>
     </section>
      
     <section class="flex">

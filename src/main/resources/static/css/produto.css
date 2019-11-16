@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+nav, ul {list-style: none;}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {opacity: 1;}
+
+/* tamanho da imagem*/
+.img-logo { width: 180px;}
+.nav ul {display: flex; }
+header li a {color: #288BE4;}
+header li {margin: 0 15px; text-align: center;}
+/* tirando a margin da esquerda*/
+header li:first-child {margin-left: 0;}
+/* tirando a margin da direta*/
+header li:last-child {margin-right: 0;}
+@media(max-width: 700px) {
+    header {flex-direction: column;}
+    header img {margin-bottom: 15px;}
+}
+
+.header-1{
+	/* 
+    background: #0984e3;
+    Old browsers
+    background: -moz-linear-gradient(-45deg, #0984e3 0%, #74b9ff 100%);
+    Chrome,Safari4+
+    background: -webkit-linear-gradient(-45deg, #0984e3 0%, #74b9ff 100%);
+    Chrome10+,Safari5.1+
+    background: -o-linear-gradient(-45deg, #0984e3 0%, #74b9ff 100%);
+    Opera 11.10+
+    background: -ms-linear-gradient(-45deg, #0984e3 0%, #74b9ff 100%);
+     */
+    background-image: url(../img/homeInitial.jpeg);
+    background-size: cover;
+    min-height: 100vh;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.header-1 h1{font-size: 3.2rem; margin-bottom: 15px;}
+.header-1 h3{font-size: 2rem; margin-bottom: 15px;}
+.header-1 .btn{background-color: #fff; border-radius: 4px; color: blue; padding: 20px 50px; text-transform: uppercase; }
+@media(max-width: 700px) {
+    .header-1 h1 {font-size: 2.5rem;}
+    .header-1 h3 {font-size: 1.5rem;}
+}
+
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
+}
+.flex {
+    display: flex;
+    flex-flow: row wrap;
+    max-width: 900px;
+    margin: 0 auto;
+    margin-bottom: 50px;
+  }
+  
+  .flex > div {
+    flex: 1 1 200px;
+    margin: 20px;
+  }
+  
+  .flex p {
+    padding: 10px;
+  }
+  
+  .flex div {
+   
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+  }
+  
+  .flex img {
+    max-width: 100%;
+  }
+
+  h1 {
+    text-align: center;
+    margin-top: 150px;
+    margin-bottom: 50px;
+  }
