@@ -22,14 +22,18 @@
 	</section>
 
 	<section class="container">
+	<div>
+		<h3>Acesso ao Sistema Turmalinas</h3>
+		<hr>
+	</div>
 		<div class="form-box">
 			<form th:action="@{/login}" method="post">
 				<div>
 					<h1>Login</h1>
 				</div>
 				<div>
-					<input type="text" name="username" placeholder="Informe seu login" class="form-input"> 
-					<input type="password" name="password" placeholder="Informe sua senha" class="form-input">
+					<input type="text" name="username" placeholder="Digite seu login" class="form-input"> 
+					<input type="password" name="password" placeholder="Digite sua senha" class="form-input">
 				</div>
 				<div>
 					<input type="submit" value="Entrar" class="form-btn">

@@ -15,6 +15,11 @@ public class IndexController {
 	  public String login() {
 	    return "login"; 
 	  }
+	
+	@GetMapping("/gerenciamento")
+	  public String gerenci() {
+	    return "gerenciamento"; 
+	  }
    
 	@GetMapping("/membros")
 	public String membros() {
@@ -25,10 +30,4 @@ public class IndexController {
 	public String produtos() {
 		return "produtos";
 	}
-	
-	@GetMapping("/gerenci")
-	public String gerenciamento() {
-		return "gerenciamento";
-	}
-
 }

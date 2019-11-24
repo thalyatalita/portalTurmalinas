@@ -1,0 +1,17 @@
+
+<div th:fragment="navbar">
+<meta charset='UTF-8'>
+<header>
+         <a href="/"><img class="img-logo" src="/img/logo/turmalinasTechAzul1.png" alt="Logo Tipo"></a>
+         <nav class="nav" data-container="menu">
+         <ul>
+            <li><a href="/membros">Membros</a></li>
+            <li><a href="/eventos">Eventos</a></li>
+            <li><a href="#">Publicações</a></li>
+            <li><a href="/produtos">Produtos</a></li>      
+            <li sec:authorize="hasAuthority('ROLE_ADMIN')"><a href=/gerenciamento>Gerenciamento</a>
+            </li>
+         </ul>       
+        </nav>
+    </header>
+</div>

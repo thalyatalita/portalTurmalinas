@@ -15,20 +15,62 @@ a {
 }
 a:hover {opacity: 1;}
 
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+   
+}
+
+
+/* tamanho da imagem*/
+.img-logo { width: 180px;}
+.nav ul {display: flex; }
+header li a {color: black;}
+header li {margin: 0 15px; text-align: center;}
+/* tirando a margin da esquerda*/
+header li:first-child {margin-left: 0;}
+/* tirando a margin da direta*/
+header li:last-child {margin-right: 0;}
+@media(max-width: 700px) {
+    header {flex-direction: column;}
+    header img {margin-bottom: 15px;}
+}
+
+body{
+	background: #fff;
+}
+
 .centro {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 100px 50px;
+    padding: 80px 50px;
 
+}
+
+.voltar a {
+    display: flex;
+    flex-direction: column;
+    margin-left: 90%;
+    margin-top: 50px;
+    color: black;
+    font-size: 110%;
 }
 
 .centro h1 {
     font-size: 30px;
 }
 .menu .grid {justify-content: center; margin-bottom: 25px; display: flex; align-items: center;}
-.menu .grid li {padding: 0px 30px; text-align: center;}
-.menu .grid li a i {text-align: center; color: #0984e3; font-size: 4rem; margin-bottom: 30px;}
+.menu .grid li {padding: 0px 30px; text-align: center; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin: 15px;}
+.menu .grid li a i {text-align: center; color: #0984e3; font-size: 4rem; margin-bottom: 15px; margin-top: 50px;}
 .menu .grid li h4 {font-size: 1.5rem; color: black; margin-bottom: 30px;}
 @media(max-width:850px) {
     .contatos .grid {flex-direction: column;}

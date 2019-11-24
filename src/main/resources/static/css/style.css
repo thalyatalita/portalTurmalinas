@@ -7,7 +7,8 @@
 }
 
 body {
-  margin-bottom: 100px;
+	background: aliceblue;
+    margin-bottom: 100px;
 }
 
 nav, ul {list-style: none;}
@@ -19,9 +20,14 @@ a {
 }
 a:hover {opacity: 1;}
 
-h1 {
+.text-1 h1 {
   text-align: center;
   margin-top: 100px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 50px;
 }
 
 nav, ul {list-style: none;}
@@ -36,14 +42,15 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 10px 50px;
-  background: #288BE4;
+  background: #fff;
+  box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
 }
 
 /* tamanho da imagem*/
 .img-logo { width: 180px;}
 
 .nav ul {display: flex; }
-header  li a {color: #fff;}
+header  li a {color: #288BE4;}
 header  li {margin: 0 15px; text-align: center;}
 
 /* tirando a margin da esquerda*/
@@ -70,6 +77,15 @@ header li:last-child {margin-right: 0;}
   padding: 10px;
 }
 
+hr {
+    width: 200px;
+    height: 2px;
+    margin: 13px auto;
+    background-color: black;
+    margin-bottom: 20px;
+    border: none;
+}
+
 /* CSS FLEXBOX 1 */
 
 .flex {
@@ -85,20 +101,26 @@ header li:last-child {margin-right: 0;}
 }
 
 .flex p {
-  padding: 10px;
+  padding: 15px;
 }
 
 .flex div {
+  color:black;
   padding: 7px;
   width: 250px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ /*  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
   text-align: center;
   
 }
-
+.flex a i {
+	color: black;
+	margin: 3px; 
+	font-size: 1.5rem;	
+}
 .flex img {
-  border: 4px solid cadetblue;
+  border: 6px solid darkcyan;
   padding: 10px;
   border-radius: 50%;
   max-width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

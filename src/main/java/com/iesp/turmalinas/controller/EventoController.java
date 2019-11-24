@@ -18,14 +18,14 @@ public class EventoController {
 	@Autowired
 	private EventoService service;
 	
-	@GetMapping("/listaEventos")
+	@GetMapping("/eventos")
 	public ModelAndView findAll() {
 		ModelAndView mv = new ModelAndView("listEvento");
 		mv.addObject("eventos", service.findAll());
 		return mv;
 	}
 	
-	@GetMapping("/evento")
+	@GetMapping("/eventoCadastro")
     public ModelAndView eventos(Evento evento) {
         ModelAndView mv = new ModelAndView("/addEvento");
         mv.addObject("evento", evento);

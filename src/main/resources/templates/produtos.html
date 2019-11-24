@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
    <meta charset='UTF-8'>
    <link rel="shortcut icon" href="img/turmalinasPreto.png" type="image/x-icon">
@@ -9,22 +9,11 @@
    <link rel='stylesheet' type='text/css' href='css/produto.css'>
 </head>
 <body>
-        <header>
-                <a href="/"><img class="img-logo" src="img/logo/turmalinasTechAzul1.png" alt="Logo Tipo"></a>
-                 <nav class="nav"  data-container="menu">
-                 <ul>
-                    <li><a href="#turmalinas">Sobre nós</a></li>
-                    <li><a href="/membros">Membros</a></li>
-                    <li><a href="#">Eventos</a></li>
-                    <li><a href="#">Publicações</a></li>
-                    <li><a href="/produtos">Produtos</a></li>
-                    <li><a href="#contat">Contato</a></li>
-                 </ul>       
-                </nav>
-            </header>
-            
-             <h1>PRODUTOS TURMALINAS TECH</h1>
-             
+   
+   <div th:replace="fragments/menu :: navbar">
+   </div>
+   
+		<h1>PRODUTOS TURMALINAS TECH</h1>
            <section class="flex">
                <div>
                    <img src="./img/produtos/agenda preta.jpg">

@@ -1,43 +1,40 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
    <meta charset='UTF-8'>
      <link rel="shortcut icon" href="/img/turmalinasPreto.png" type="image/x-icon">
     <title>Turmalinas Tech</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.10.1/css/all.css" data-integrity="sha384-wxqG4glGB3nlqX0bi23nmgwCSjWIW13BdLUEYC4VIMehfbcro/ATkyDsF/AbIOVe" data-crossorigin="anonymous">
-    <link rel="stylesheet" type='text/css' href="/css/style.css" />
+    <link rel="stylesheet" type='text/css' href="css/style.css" />
   </head>
   <body>
   
-  <header>
-        <a href="/"><img class="img-logo" src="/img/logo/turmalinasTechAzul1.png" alt="Logo Tipo"></a>
-         <nav class="nav"  data-container="menu">
-         <ul>
-            <li><a href="#turmalinas">Sobre nós</a></li>
-            <li><a href="/membros">Membros</a></li>
-            <li><a href="#">Eventos</a></li>
-            <li><a href="#">Publicações</a></li>
-            <li><a href="/produtos">Produtos</a></li>
-            <li><a href="#contat">Contato</a></li>
-         </ul>       
-        </nav>
-    </header>
-    
-    <h1>Co-Fundadoras</h1>
+   <div th:replace="fragments/menu :: navbar">
+   </div>
+   
+   <div class="text-1">
+   		<h1>Co-Fundadoras</h1>
+   </div>
     <hr>
     <section class="flex">
       <div>
         <img src="/img/membros/alanamm.jpg">
-        <p>Alana Morais Doutora Mestrada Professora Doutora Mestrada Professora Doutora Mestrada Professora</p>
+        <p>Prof. Drª Alana Morais</p>
+         <a><i class="fab fa-instagram"></i></a>
+         <a><i class="fab fa-linkedin"></i></a>
       </div>
       <div>
         <img src="/img/membros/alinemm.jpg">
-        <p>Aline Morais Doutora Mestrada Professora Doutora Mestrada Professora Doutora Mestrada Professora</p>
+        <p>Prof. Drª Aline Morais</p>
+         <a><i class="fab fa-instagram"></i></a>
+         <a><i class="fab fa-linkedin"></i></a>
       </div>
       <div>
         <img src="/img/membros/sheylana.jpg">
-        <p>Sheyla Medeiros Doutora Mestrada Professora Doutora Mestrada Professora Doutora Mestrada Professora</p>
+        <p>Prof. Meª Sheyla Medeiros</p>
+         <a><i class="fab fa-instagram"></i></a>
+         <a><i class="fab fa-linkedin"></i></a>
       </div>
     </section>
 
@@ -46,51 +43,75 @@
     <section class="flex">
         <div>
             <img src="/img/membros/lycia.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+         	<a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/raissa.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
              <img src="/img/membros/mel.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/priscilla.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/mariana.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/cris.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/isabelle.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/jussara.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
              <img src="/img/membros/priscilla-2.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/ayrana.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+             <a><i class="fab fa-instagram"></i></a>
+             <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/tamiris.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
           <div>
             <img src="/img/membros/jessica.jpg">
-            <p>Estudante</p>
+            <p>Graduanda</p>
+            <a><i class="fab fa-instagram"></i></a>
+            <a><i class="fab fa-linkedin"></i></a>
           </div>
     </section> 
   </body>

@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html  xmlns:th="http://www.thymeleaf.org"
        xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity5">
-
 <head>
     <meta charset='UTF-8'>
      <link rel="shortcut icon" href="/img/turmalinasPreto.png" type="image/x-icon">
@@ -16,24 +15,25 @@
     <div class="btn-voltar" data-container="botao-voltar">
         <a href=""><i class="fas fa-chevron-circle-up"></i></a>
     </div>
-    
+ 
      <header>
         <a href="/"><img class="img-logo" src="/img/logo/turmalinasTechAzul1.png" alt="Logo Tipo"></a>
-         <nav class="nav"  data-container="menu">
+         <nav class="nav" data-container="menu">
          <ul>
             <li class="dropdown"><a href="#sobrenos" class="dropbtn">Sobre nós</a>
             	<div class="dropdown-content"><a href="#atividades">Nossas Atividades</a></div>
             </li>
             <li><a href="/membros">Membros</a></li>
-            <li><a href="/listaEventos">Eventos</a></li>
+            <li><a href="/eventos">Eventos</a></li>
             <li><a href="#">Publicações</a></li>
             <li><a href="/produtos">Produtos</a></li>
             <li><a href="#contato">Contato</a></li>      
-            <li sec:authorize="hasAuthority('ROLE_ADMIN')"><a href=/gerenci>Gerenciamento</a>
+            <li sec:authorize="hasAuthority('ROLE_ADMIN')"><a href=/gerenciamento>Gerenciamento</a>
             </li>
          </ul>       
         </nav>
-    </header>
+    </header> 
+    
     <section id="home" class="header-1">
     </section>
     
@@ -53,7 +53,7 @@
         <p>Tem como intuito principal investigar sobre a atuação da mulher e seus desafios na área da tecnologia, além de apoiar e emponderar as discentes do sexo feminino da instituição a fim de minimizar os índices de evasão nos cursos de tecnologia.</p>
        </div>
        <div class="titulo">
-      	<h1>Porque Turmalinas?</h1>
+      	<h1>Por que Turmalinas?</h1>
       </div>
        <div class="text">
        	  <p>O nome foi escolhido para representar quão preciosas nós somos dentro da nossa sociedade e como precisamos nos valorizar de tal forma (Turmalina é uma pedra preciosa existente em nossa região).</p>
@@ -98,17 +98,17 @@
        <div>
         <img src="./img/vetor11.jpeg">
         <h3>Entretenimento</h3>
-        <p>Atividades que incluem apresentação de filmes, debates e palestras sobre diversidade, igualdade de gênero e outros temas pertinentes são ferramentas utilizadas para conscientização e reflexão da comunidade.</p>
+        <p>Realizamos reuniões semestrais para reunir todas as meninas da instituição e também para acolher as que estão iniciando no curso. Falamos sobre assuntos academicos, são momentos para compartilhar, dinâmicas para descontrair.</p>
       </div>
       <div>
         <img src="./img/vetor2.jpeg">
         <h3>Pesquisa</h3>
-        <p>Outra ação do projeto é o desenvolvimento de pesquisas que contribuem na formação científica dos estudantes e geram desenvolvimento científico na Universidade.</p>
+        <p>Temos projeto de pesquisas que são desenvolvidos caso de estudo entre as meninas para criação de artigos e livro e que serão publicados.</p>
       </div>
       <div>
         <img src="./img/vetor3.jpg">
         <h3>Qualificação</h3>
-        <p>Através de cursos e oficinas, o projeto capacita os membros, os discentes e comunidade em variadas tecnologias. Essas atividades são executadas pelas garotas do projeto.</p>
+        <p>São realizados cursos e oficinas com intuito de capacitá-las. E também com a certificações dos cursos que participou, elas podem ministrar palestras/cursos.</p>
       </div>
     </section>
 

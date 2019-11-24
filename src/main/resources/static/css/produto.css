@@ -7,6 +7,11 @@
 }
 nav, ul {list-style: none;}
 
+body {
+	
+	background: aliceblue;
+}
+
 a {
     text-decoration: none;
     cursor: pointer;

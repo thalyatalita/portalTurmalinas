@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	heigth: 100vh;
+	background-color: #efefef;
+}
+nav, ul {list-style: none;}
+a {
+    text-decoration: none;
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:hover {opacity: 1;}
+
+/* tamanho da imagem*/
+.img-logo { width: 180px;}
+.nav ul {display: flex; }
+header li a {color: #288BE4;}
+header li {margin: 0 15px; text-align: center;}
+/* tirando a margin da esquerda*/
+header li:first-child {margin-left: 0;}
+/* tirando a margin da direta*/
+header li:last-child {margin-right: 0;}
+@media(max-width: 700px) {
+    header {flex-direction: column;}
+    header img {margin-bottom: 15px;}
+}
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background: #fff;
+    box-shadow: 0 5px 11px 0 rgba(50,50,50,.08);
+}
+
+.containerGeral {
+	max-width: 900px;
+	width: 100%;
+	background-color: #fff;
+	padding: 20px 35px;
+	box-shadow: 3px 3px 15px #999;
+	margin: 100px 0;
+}
+
+.center h1 {
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+  }
+  
+.table {
+ 
+   border: 1px solid #666;
+ 
+  }
+  
+thead {
+  background: #ccc url(https://www.devfuria.com.br/html-css/tabelas/bar.gif) repeat-x left center;
+  border-top: 1px solid #a5a5a5;
+  border-bottom: 1px solid #a5a5a5;
+}
+
+
+
+
+th {
+  font-weight: normal;
+  text-align: left;
+}
+
+th, td {
+	padding: 0.3em 1.5em;
+}
+
+.final {
+	margin-top: 30px;
+	
+}
+
